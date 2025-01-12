@@ -1,0 +1,32 @@
+h2.title {
+    color: rgb(40, 143, 62);
+}
+
+h2 {
+    color: red !important; /* immportant varsa o olur ilk olarak */
+}
+
+* {
+    color: blue;
+}
+
+.container {
+    font-size: 20px;
+}
+
+div.container p { /* bir boşluk bırakıp p yazınca içindeki pleri demiş oluyoruz */
+    text-align: center;
+}
+
+ul.container li {
+    color: seagreen;
+}
+
+.title {
+    color: purple;
+}
+
+
+/* eşit ise son atanan olr,
+değilse hangisi daha spesifik ise o olur. */
+

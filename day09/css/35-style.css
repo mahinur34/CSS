@@ -1,0 +1,43 @@
+body {
+    background-image: radial-gradient(black,white);
+}
+
+
+div{
+    padding: 50px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.box1 {
+    background-image: linear-gradient(green,yellow);
+
+}/* yeşilden sarıya geçiş */
+
+.box2 {
+    background-image: linear-gradient(to right, green,yellow,orange);
+}            /* default u :to bottom */
+
+.box3 {
+    background-image: linear-gradient(45deg,orange,blue);
+}
+
+.box4 {
+    background-image: linear-gradient(to right, yellow 70%,black); /* 70 ile sarı oranını artırdık */
+}
+
+.box5 {
+    background-image: radial-gradient(red,yellow); /* radiel-gradient: elips şeklinde yapıyor */
+}
+
+.box6 {
+    background-image: radial-gradient(circle,blue,yellow);
+}
+
+button {
+    padding: 10px 30px;
+    margin: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(to left,red,blue,coral);
+    cursor: pointer;
+}

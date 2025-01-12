@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        nav.navbar {
+            display: inline;
+            
+        }
+
+        nav.navbar button {
+            padding: 10px 20px;
+            background-color: gray;
+            color: white;
+            cursor: pointer;
+        }
+
+        nav.navbar ul {
+            margin-top: 0;
+            padding-left: 10px;
+            list-style: inside;
+            border: 1px solid black;
+            width: 100px;
+            display: none; /* görünmez oldu */
+        }
+
+        nav.navbar ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav.navbar:hover ul {
+            display: block;
+        }
+    </style>
+
+   
+</head>
+<body>
+    
+<h2>Navbar</h2>
+
+<nav class="navbar">
+    <button>Ürünler</button>
+
+    <ul>
+       <li><a href="">NoteBook</a></li>
+       <li><a href="">Klavye</a></li>
+       <li><a href="">Mouse</a></li>
+       <li><a href="">Monitor</a></li>
+
+    </ul>
+</nav>
+</body>
+</html>

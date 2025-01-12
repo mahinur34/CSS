@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+     
+     div{
+        background-color: aqua;
+        color: whitesmoke;
+        width: 300px;
+        margin: 20px auto;
+        padding: 20px;
+        text-align: center;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        border: 3px solid gray;
+        border-radius: 5px;
+     }
+
+     .box1 {
+        box-sizing: content-box; /* default değer, border ve padding değerlerini genişlikten hariç tutar  */
+     }
+
+     .box2{
+        box-sizing: border-box; /* border ve padding değerlerini genişliğe dahil eder */
+     }
+
+    </style>
+</head>
+<body>
+    <h2>Box Model</h2>
+
+    <div class="box1">Content Box</div>
+    <div class="box2">Border Box</div>
+</body>
+</html>

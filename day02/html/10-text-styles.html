@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Styles</title>
+
+    <style>
+        h1{
+            text-decoration: underline overline red double; /* underline altını çizer, overline üstünü çizer, wavy : dalgalı */
+            text-align: center;
+            text-transform: uppercase; /* capitalize ise baş harfi büyük diğerlerini küçük harf yapar */
+        }
+
+        a{
+            text-decoration: none; /* linklerin altındaki çizgiyi kaldırdık */
+        }
+
+        ul{
+            font-style: oblique;
+            color: lightgreen;
+        }
+
+        ul li a{
+            color: lightblue;
+        }
+
+        footer{
+          text-align: center;
+          background-color: seagreen;
+          color: white;
+          line-height: 40px;
+          font-size: 1.25rem;
+          text-decoration: underline overline dotted; /* dotted : noktalı */
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Styles</h1>
+
+    <a href="">Link</a>
+
+    <ul>
+       <li><a href="">Lorem.</a></li>
+       <li><a href="">Reiciendis!</a></li>
+       <li><a href="">Dolores.</a></li>
+       <li><a href="">Recusandae.</a></li>
+    </ul>
+
+    <footer>
+        &copy; 2022 My Website. All rights reserved.
+    </footer>
+</body>
+</html>

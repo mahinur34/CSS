@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav.menu {
+    background-color: gray;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
+
+header nav.menu a {
+    margin: 0 18px;
+    color: white;
+}
+
+header nav.menu img {
+    width: 20px;
+    height: 15px;
+}
+
+main p.first-p {
+    text-align: center;
+}
+
+main p.first-p a:hover{
+    text-decoration: underline;
+}
+
+main section {
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+main section h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+main section.ipad .harika {
+    font-size: 2rem;
+}
+
+main section .common-p {
+    font-size: 1.5rem;
+    color: rgb(156, 153, 153);
+}
+
+main section .links a {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 1px solid blue;
+    border-radius: 50px;
+    background-color: blue;
+    color: white;
+}
+
+main section .links a:hover{
+    background-color: blue;
+    color: white;
+}
+
+main section .links .second-a {
+    color: blue;
+    background-color: transparent;
+}
+
+main section img {
+    width: 50%;
+    height: 40vh;
+    margin: 20px;
+}
+
+main section.ipad {
+    background-color: aliceblue;
+}
+
+main section.iphone16-pro {
+    background: radial-gradient(circle, rgb(150, 90, 90), rgb(80, 14, 14));
+}
+
+main section.iphone16 {
+    background: linear-gradient(to bottom, rgb(76, 76, 235), rgb(210, 210, 214));
+}
+
+section.iphone16-pro h2, section.iphone16 h2 { /* virgül koyarak seçebiliriz */
+    color: white;
+}

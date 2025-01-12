@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mode</title>
+
+    <style>
+   input#check-mode:checked + p.paragraph{ /* seçili iken siyah yapmış olduk ~ p yapsaydık altta bir p daha olduğunda onu da seçerdi */
+    background-color: black;
+    color: white;
+   }
+   
+   /* :checked pseudo-class: Bu pseudo-class, input elemanının "seçili" olup olmadığını kontrol eder.
+    Eğer bir checkbox seçildiyse veya bir radio button aktifse, :checked durumu geçerli olur. 
+    Bu, CSS'de seçili durumda olan elemanlara stil vermek için kullanılır. */
+
+    label[for="check-mode"]{
+
+    font-weight: bold;
+    background-color: lightblue;/* yazı arkası açık mavi */
+    color: whitesmoke;  /* yazı beyaz */
+    padding: 10px;/* dışarı genişledi */
+    border: 3px solid gray; /* kutunun dışına kalıp gectik gri renkte */
+    border-radius: 5px;/* köşeleri yumuşattık */
+    cursor: pointer;
+    }
+
+    input#check-mode{
+        display: none; /* chechbox u kaldırdık ama user göremiyor sadece */
+    }
+    
+    </style>
+</head>
+<body>
+    <h2>Mode Practice</h2>
+
+    <label for="check-mode">Mode</label><!-- yazıya tıkladığımda da seçer bu şekilde -->
+
+    <input type="checkbox" name="" id="check-mode">
+
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Dolores repellat tempora earum, vero eius dignissimos
+          ex placeat nemo officia in! Lorem ipsum dolor sit amet 
+          consectetur adipisicing elit. <br> Expedita temporibus molestiae 
+          nisi accusamus quam nobis. Minima alias assumenda eos nobis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Porro at doloribus quas, a unde minus dolorem aliquid nostrum eius laborum?</p>
+
+        
+</body>
+</html>

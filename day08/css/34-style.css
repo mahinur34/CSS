@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 600px;
+    padding: 20px;
+}
+
+.step-box{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    border-top: 5px solid #f05a54;
+}
+

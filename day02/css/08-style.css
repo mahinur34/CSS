@@ -1,0 +1,23 @@
+nav.navbar{
+    background-color:lightgray;
+    text-align: center;
+    width: 200px;
+    font-size: 1.2rem; /* default : 1rem :16px */
+    line-height: 3rem;
+}
+
+.aktive{
+ background-color: darkgray;
+ color: white;
+}
+
+/* HTML kök öğesinde font boyutunu değiştirerek 1rem değerini güncelleyebilirsiniz.
+
+html {
+  font-size: 20px; /* Artık 1rem = 20px olacak 
+} 
+
+p {
+  font-size: 1rem;  Bu durumda <p> etiketinin font boyutu 20px olur 
+} 
+  */

@@ -1,0 +1,55 @@
+.container {
+    background-color: pink;
+    height: 300px;
+    display: flex;/* bbu özellik sadece parenta verilir, blok olmasına rağmen yanyana gelir */
+    justify-content: space-evenly; /* blok elementlerde textalign center gibi çalışır, display:flex iken çalışır */ /* right dersek sağa yanaşır, vs. */ /* yatayda hizalama */
+    align-items:flex-start; /* dikeyde hizalama yapar */ /* son 3 çok kullanılır */
+    flex-direction: column-reverse; /* sütun olarak sıralama yapar, reverse dersek tersine çevirir */
+ }
+ 
+ .container div {
+     background-color: yellow;
+     width: 50px;
+     height: 50px;
+     border: 1px solid black;
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .first{
+     align-self: flex-end; /* child elemente verilir */
+ }
+ /* eğer parenta toplu olarak hizalama işlemi yapacaksak justify-content, align-items,
+ child a hizalama vereceksek align-self kullanılır*/
+ 
+ .container2{
+     background-color: plum;
+     height: 100px;
+     margin-top: 30px;
+     display: flex;
+     align-items: center;
+     gap: 20px; /* boşluk verir aralara, sadece flex varken kullanılır */
+ }
+ 
+ .container2 div {
+ 
+     background-color: yellowgreen;
+     width: 50px;
+     height: 50px;
+     border: 5px solid rgb(160, 40, 40);
+     
+ }
+ 
+ .box1 {
+     flex: 1;
+ }
+ 
+ .box2{
+     flex:2; /* 2 alanlık yer kaplar, diğerleri 1 alanlık, parent a göre hareket eder */
+ }
+ 
+ .box3{
+     flex: 1;
+ }

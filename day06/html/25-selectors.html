@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+    <style>
+
+        .my-div p{
+            color:red
+
+        }
+
+        .my-div > p{
+            color: aquamarine; /* sadece ilk child lara özellik vermiş olduk */
+        }
+
+        .my-div div p{
+            font-size: 30px;
+            color: blue;
+        }
+
+        .my-div div p:nth-child(2){
+               font-size: 50px;
+        }  
+
+        .my-div + h3{
+            font-style: italic;
+        }
+
+        .my-div +h3 +a +a{ /*!!!!!!   + bi sonraki anlamına geliyor ama 2 a ekleyince sonuncuyu kabul ettii!!!!!! */
+            text-decoration: none;
+        }
+
+        .my-div+h3+a+a{
+            text-decoration: none;
+            color: chocolate;
+        }
+
+        .my-div  ~ a{/* tüm a ları seçer */
+
+            font-size: 20px;
+            background-color: bisque;
+        }
+
+          </style>
+</head>
+<body>
+    <h2>Selectors</h2>
+
+    <div class="my-div">
+
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <p>Hello World</p> <!-- chil -->
+
+    </div>
+
+
+    <h3>Lorem ipsum dolor sit amet K.  </h3>
+
+    <a href="">Click</a>
+    <a href="">Click2</a>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <a href="">Click</a>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed -Sticky</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        nav.navbar {
+            background-color: rgba(134, 134, 196, 0.95);
+            position: fixed; /* sabit kalmasını sağlıyor */
+            width: 100%;
+            top: 0;
+            z-index: 1; /* stick yi kaydırdıkça menünün altında kalmasını sağladı */
+        }
+
+        nav.navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px;
+        }
+
+        nav.navbar ul li a {
+            text-decoration: none;
+            background-color: gold;
+            color: whitesmoke;
+            padding: 7px 15px;
+            border-radius: 5px;
+            font-weight: 900;
+        }
+
+        p {
+            font-size: large;
+            padding: 0 10px;
+            text-align: justify;
+        }
+
+        table {
+            background-color: bisque;
+            text-align: center;
+            margin-left: 20px;
+            font-size: 17px;
+        }
+
+        table thead {
+            background-color: lightpink;
+            position: sticky;
+            top: 90px;
+            z-index: 0;
+        }
+
+        /* fixed her zaman sabittir. sticky ise belirlenen nokta gelene kadar normal hareket eder, belierlenen noktadan sonra fixed gibi hareket eder. */
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <p style="margin-top: 6rem;"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, animi voluptas! Cupiditate quam magnam ex quo eligendi excepturi libero quibusdam consequuntur ipsum voluptatum officiis omnis placeat blanditiis, expedita dolore sequi!</span><span>Veniam nemo iste ea minima explicabo quidem aspernatur velit numquam? Accusamus, sit fuga veritatis ipsa quas, provident, placeat neque earum ad facilis libero vero fugit illum enim totam iste! Cum?</span><span>Optio tempore repellendus error ex suscipit beatae inventore a rerum, praesentium quos accusantium ullam quaerat, consectetur atque, ipsa ducimus porro impedit et non laudantium qui? Necessitatibus molestiae omnis cumque voluptatibus.</span><span>Fugiat ut consequuntur quasi dolorum non, eaque tempora aliquam itaque obcaecati nulla libero dolores magnam in suscipit sapiente fuga earum atque mollitia aut, excepturi consequatur. Expedita odit sit ipsum similique!</span><span>Magni veritatis excepturi blanditiis itaque iure commodi, quod temporibus qui tempora neque, modi architecto vel inventore obcaecati. Molestias sint, fugiat dignissimos exercitationem, eveniet maxime nam pariatur vel minima fuga id!</span></p>
+
+    <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, animi voluptas! Cupiditate quam magnam ex quo eligendi excepturi libero quibusdam consequuntur ipsum voluptatum officiis omnis placeat blanditiis, expedita dolore sequi!</span><span>Veniam nemo iste ea minima explicabo quidem aspernatur velit numquam? Accusamus, sit fuga veritatis ipsa quas, provident, placeat neque earum ad facilis libero vero fugit illum enim totam iste! Cum?</span><span>Optio tempore repellendus error ex suscipit beatae inventore a rerum, praesentium quos accusantium ullam quaerat, consectetur atque, ipsa ducimus porro impedit et non laudantium qui? Necessitatibus molestiae omnis cumque voluptatibus.</span><span>Fugiat ut consequuntur quasi dolorum non, eaque tempora aliquam itaque obcaecati nulla libero dolores magnam in suscipit sapiente fuga earum atque mollitia aut, excepturi consequatur. Expedita odit sit ipsum similique!</span><span>Magni veritatis excepturi blanditiis itaque iure commodi, quod temporibus qui tempora neque, modi architecto vel inventore obcaecati. Molestias sint, fugiat dignissimos exercitationem, eveniet maxime nam pariatur vel minima fuga id!</span></p>
+
+    <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, animi voluptas! Cupiditate quam magnam ex quo eligendi excepturi libero quibusdam consequuntur ipsum voluptatum officiis omnis placeat blanditiis, expedita dolore sequi!</span><span>Veniam nemo iste ea minima explicabo quidem aspernatur velit numquam? Accusamus, sit fuga veritatis ipsa quas, provident, placeat neque earum ad facilis libero vero fugit illum enim totam iste! Cum?</span><span>Optio tempore repellendus error ex suscipit beatae inventore a rerum, praesentium quos accusantium ullam quaerat, consectetur atque, ipsa ducimus porro impedit et non laudantium qui? Necessitatibus molestiae omnis cumque voluptatibus.</span><span>Fugiat ut consequuntur quasi dolorum non, eaque tempora aliquam itaque obcaecati nulla libero dolores magnam in suscipit sapiente fuga earum atque mollitia aut, excepturi consequatur. Expedita odit sit ipsum similique!</span><span>Magni veritatis excepturi blanditiis itaque iure commodi, quod temporibus qui tempora neque, modi architecto vel inventore obcaecati. Molestias sint, fugiat dignissimos exercitationem, eveniet maxime nam pariatur vel minima fuga id!</span></p>
+
+    <table>
+        <thead>
+            <th>Lorem.</th>
+            <th>Eos.</th>
+            <th>Impedit!</th>
+            <th>Exercitationem?</th>
+            <th>Lorem</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem.</td>
+                <td>Sit.</td>
+                <td>Amet.</td>
+                <td>Voluptates?</td>
+                <td>Modi.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Qui!</td>
+                <td>Explicabo.</td>
+                <td>Repellendus.</td>
+                <td>Dignissimos!</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Aut!</td>
+                <td>Laudantium!</td>
+                <td>Quam!</td>
+                <td>Minus!</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Vel.</td>
+                <td>Tempore!</td>
+                <td>Tempore.</td>
+                <td>Quam.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Delectus.</td>
+                <td>Sunt.</td>
+                <td>Ducimus!</td>
+                <td>Debitis!</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Reiciendis.</td>
+                <td>Laudantium.</td>
+                <td>Fuga.</td>
+                <td>Error!</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Voluptates?</td>
+                <td>Ut?</td>
+                <td>Nihil!</td>
+                <td>A.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Ipsam?</td>
+                <td>Sit.</td>
+                <td>Laudantium.</td>
+                <td>Nulla?</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Fuga.</td>
+                <td>Tenetur?</td>
+                <td>Fugit!</td>
+                <td>Nulla!</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Ipsum.</td>
+                <td>Officiis?</td>
+                <td>Laudantium!</td>
+                <td>Ad!</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, voluptate nam tenetur nemo explicabo repellat, odit minus numquam sint neque ullam culpa praesentium in nesciunt excepturi officia molestiae. Harum, incidunt?</span><span>Obcaecati quibusdam veniam sapiente at odio dolore necessitatibus accusantium ipsam sed magni, fugit soluta tempora et voluptate, alias officia voluptas? Quam explicabo sequi nesciunt officiis necessitatibus maiores, culpa at cum.</span><span>Magni dolor sunt amet aliquam! Facilis expedita quae nostrum unde, dolore soluta ipsa quidem nisi reprehenderit quasi temporibus. Blanditiis esse fugiat excepturi sit praesentium cupiditate distinctio labore non ipsum ut?</span></p>
+
+    <p><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, voluptate nam tenetur nemo explicabo repellat, odit minus numquam sint neque ullam culpa praesentium in nesciunt excepturi officia molestiae. Harum, incidunt?</span><span>Obcaecati quibusdam veniam sapiente at odio dolore necessitatibus accusantium ipsam sed magni, fugit soluta tempora et voluptate, alias officia voluptas? Quam explicabo sequi nesciunt officiis necessitatibus maiores, culpa at cum.</span><span>Magni dolor sunt amet aliquam! Facilis expedita quae nostrum unde, dolore soluta ipsa quidem nisi reprehenderit quasi temporibus. Blanditiis esse fugiat excepturi sit praesentium cupiditate distinctio labore non ipsum ut?</span></p>
+
+    <p><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, voluptate nam tenetur nemo explicabo repellat, odit minus numquam sint neque ullam culpa praesentium in nesciunt excepturi officia molestiae. Harum, incidunt?</span><span>Obcaecati quibusdam veniam sapiente at odio dolore necessitatibus accusantium ipsam sed magni, fugit soluta tempora et voluptate, alias officia voluptas? Quam explicabo sequi nesciunt officiis necessitatibus maiores, culpa at cum.</span><span>Magni dolor sunt amet aliquam! Facilis expedita quae nostrum unde, dolore soluta ipsa quidem nisi reprehenderit quasi temporibus. Blanditiis esse fugiat excepturi sit praesentium cupiditate distinctio labore non ipsum ut?</span></p>
+
+</body>
+</html>

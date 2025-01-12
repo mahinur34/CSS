@@ -1,0 +1,41 @@
+form.login input[type="text"]:focus{ /* focus:içine tıkladığımızda */
+
+    background-color: aquamarine;
+    color: blue;
+    outline: 1px solid pink;
+}
+
+form.login.email:focus{
+    background-color: yellowgreen;
+    outline: 5px solid blue;
+}
+
+form.login input[type="checkbox"]:checked{/*işaretli iken gecerli olsun */
+    outline: 1px solid blue;
+    
+}
+
+p.paragraph span:first-child{/* birinci */
+    color: green;
+}
+
+p.paragraph span:last-child{/* sonuncu */
+    color: blueviolet;
+}
+
+p.paragraph span:nth-child(2){/* tek seferde yapabiliriz */
+    color: blue;
+    font-style: italic;
+}
+
+table thead {
+    background-color: palegreen;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: lightskyblue;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: greenyellow;
+}

@@ -1,0 +1,106 @@
+:root {
+    --color1: whitesmoke;
+    --color2: rgb(216, 210, 210);
+    --color3:rgb(169, 126, 74);
+}
+
+body {
+    margin: 0;
+    background-color: var(--color2);
+}
+
+a {
+    text-decoration: none;
+}
+
+header.top, header.second {
+    background-color: rgb(105, 99, 99);
+    color: var(--color1);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900;
+}
+
+header.top nav ul, header.second nav ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+header.top nav ul li a {
+    color: var(--color1);
+}
+
+header.second {
+    background-color: var(--color2);
+    color: black;
+    padding: 15px 10px;
+    position: sticky;
+    top:0px
+}
+
+header.second div.logo {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: -3px;
+}
+
+header.second nav ul li a {
+    color: black;
+}
+
+main section.img {
+    background: url("../img/sunset-8331285_1280.jpg") center center no-repeat;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+main section.img h1 {
+    font-size: 2rem;
+    color: var(--color3);
+    text-shadow: 0 0 10px var(--color1); /* yazıya still kattık */
+}
+
+main section.text p {
+    padding: 10px;
+    text-align: justify;
+    background-color: var(--color2);
+    margin: 0;
+}
+
+main a {
+    background-color: green;
+    color: var(--color1);
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    display: flex; /* bu ve altındaki 2. ve 3. ile wp ı tamamen ortalamış olduk */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+}
+
+footer {
+    background-color: rgb(105, 99, 99) ;
+    padding: 10px;
+    color: var(--color1);
+    text-align: center;
+}
+
+
+
+
+
+

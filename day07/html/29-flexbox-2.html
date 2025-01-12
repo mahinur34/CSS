@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+        h2{
+            text-align: center;
+            font-size: 30px;
+            color: darkblue;
+        }
+
+        .flex-container{
+            background-color: pink;
+            display: flex;
+        }
+
+        .flex-container div{
+            width: 50px;
+            height: 50px;
+        }
+
+        .box1{
+            background-color: green;
+            flex: 0 1 200px; /* Genişledikçe 200px'den büyük olamaz ama ekran daraldıkça 200px in altına düşebilir, 0 ve 1 orandır px değildir  */
+        }
+
+        .box2{
+            background-color: blue;
+            flex: 1 2 200px;  /* Ekran genişledikçe 1 oranında büyür, ekran daraldıkça 2 oranında daralır. */
+        }
+
+        .box3{
+            background-color: red;
+            flex: 2 0 200px; /* Ekran genişledikçe 2 oranında büyür, ekran daraldıkça 200px'den küçük olamaz. */
+        }
+
+         /* Ekranın 30px genişlediğini varsayarsak mavi 10px büyür, kırmızı 20px büyür. */
+       /* Ekranın 30px daraldığını varsayarsak yeşil 10px küçülür, mavi 20px küçülür. */
+
+        /* 1. yazılan(flex-frow) :  Genişleme oranı,
+           2. yazılan(flex-shrink) :  Daralma oranı,
+           3. yazılan(flex-basis)  :  Başlangıç değeri */
+
+           .container {
+            background-color: pink;
+            display: flex;
+            justify-content: space-around; /* ekrana göre yer ayarlıyor */
+            align-items: center;
+            align-content: flex-start;
+            height: 100vh;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            padding: 30px;
+           }
+
+           .container div {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            border: solid; /* kenarlık */
+           }
+    </style>
+</head>
+<body>
+    <h2>Flexbox</h2>
+
+    <div class="flex-container">
+
+        <div class="box1">Item1</div>
+        <div class="box2">Item2</div>
+        <div class="box3">Item3</div>
+
+    </div>
+
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+
+
+</body>
+</html>

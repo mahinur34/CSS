@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width-Height</title>
+</head>
+<body>
+    
+    <!-- width ve height özellikleri inline elementlerde çalışmaz -->
+
+    <h2>width - heigh</h2>
+
+    <p style="background-color: aqua; text-align:center; width:250px; height: 100px;">Lorem ipsum dolor sit.</p>
+
+    <strong style="background-color: blanchedalmond; width: 250px; height: 100px;">Lorem ipsum dolor sit amet.</strong>
+
+
+</body>
+</html>
+<!-- Gerekmedikçe width ve height  kullanılmaz, yapmak istediğimiz tasarımları etkileyebilir,-->
+
+<!-- 3 tür element vardır:
+ 1. Blok Element : Varsayılan olarak, ekranın tamamını kaplar ve her yeni blok seviyesi eleman yeni bir satırda başlar.
+ width ve height özellikleri ile genişlik ve yükseklik ayarlaması yapılabilir,
+ padding, margin, ve border özelliklerine duyarlıdır ve bunlar elemanın çevresindeki alanı etkiler. 
+ <div>, <h1>-<h6>, <p>, <ul>, <ol>, <li>, <table>, <form>, <header>, <footer>, <section>, <article>, <aside> -->
+
+
+ <!-- 2. İnline Element :Bulunduğu satırın sadece gerekli kısmını kaplar ve yeni bir satır açmaz, yan yana dizilebilir.
+width ve height gibi özellikleri uygulandığında dikkate alınmaz; eleman içeriğinin boyutuna göre genişler.
+padding ve margin yalnızca yatay yönlerde (left ve right) etkilidir, dikey (top ve bottom) yönde etki etmez.  
+<span>, <a>, <img>, <strong>, <em>, <label>, <input> -->
+
+
+<!-- 3. İnline-Blok Element : Satır içi gibi davranır ve bulunduğu satırda diğer elemanlarla yan yana dizilebilir.
+Aynı zamanda blok seviyesi elemanlar gibi width, height, padding, margin özelliklerine duyarlıdır.
+inline elemanların esnek yapısını ve block elemanların boyutlandırma özelliklerini bir arada sunar.
+<button>, <input type="checkbox">, <input type="radio">, <img> (CSS ile display: inline-block -->    
+
+ <!-- Block-level elemanlar: Tam genişlik kaplar ve yeni bir satır başlatır.
+Inline elemanlar: Yalnızca içerik kadar genişler ve aynı satırda devam eder.
+Inline-block elemanlar: Satırda devam ederken blok eleman gibi genişlik/yükseklik ayarlaması yapılabilir. -->   

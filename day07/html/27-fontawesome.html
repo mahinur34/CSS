@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Awesome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        nav ul {
+            list-style-type: none; /* noktaları kaldırdık */
+            margin-top: 2rem;
+        }
+
+        nav ul li {
+            cursor: pointer;
+            margin-top: 5px; /* alt alta boşluk koyduk */
+        }
+
+        nav.navbar ul li i {
+            color: green;
+            margin-right: 10px;
+        }
+
+        nav.menu ul li::before {
+            font: var(--fa-font-solid);
+            content: "\f1d8"; /* fontawesome dan kod alıp \ ile kullanıyoruz */
+            color: blueviolet;
+            margin-right: 10px;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+<h2>Icons</h2>
+
+<i class="fa-solid fa-cloud-sun fa-beat" style="color: darkblue; font-size: 25px;"></i>
+
+<nav class="navbars">
+    <ul>
+       <li> <i class="fa-solid fa-home"></i> Home</li>
+       <li><i class="fa-solid fa-user-circle"></i>Profile</li>
+       <li><i class="fa-regular fa-calendar-alt"></i>Events</li>
+       <li><i class="fa-solid fa-book"></i>Library</li>
+    </ul>
+</nav>
+
+<nav class="menu">
+    <ul>
+        <li>Home</li>
+        <li>Blog</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Login</li>
+        
+        </ul>
+</nav>
+
+</body>
+</html>

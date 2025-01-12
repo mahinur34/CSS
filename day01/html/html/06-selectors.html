@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+    <style>
+        /* tag ismi yazarsak onunla igili taglere ulaşmış olurum,
+         nokta diyip class ismi yazarsak classı o isim olan class a ulaşmış oluruz,
+         kare diyip orda id ismi yazarsak da  id si bu isim olan taglere ulaşmış oluruz
+          */
+
+          /* SEO Css i görmez */
+
+        p{
+            
+            font-size: 18px;
+        }
+
+        .red{/*class ı red olanlara kırmızı ver demiş olduk*/
+            color: red;
+        }
+
+        .first{
+            font-size: 18px;
+            background-color: lightcoral;
+        }
+
+        #link{
+            color: chartreuse;
+            text-decoration: none;
+        }
+
+        .ortala{
+            text-align: center;
+            font-size: 25px;
+        }
+
+        #my_div{
+            width: 300px;
+            background-color: cornflowerblue;
+        }
+
+        #p1{
+            color: yellow;
+        }
+
+        #p2{
+            color: yellowgreen;
+        }
+
+
+
+
+    </style>
+</head>
+<body class="ortala">
+    <h2>Selectors</h2>
+
+    <div id="my_div"><!-- çok tercih edilmez, id kullanımı, çok spesifik bir şeye ulaşmak istediğimizde kullanırız -->
+
+        <p id="p1">Lorem ipsum dolor sit amet.</p>
+        <p id="p2">Fugiat perferendis minima recusandae fugit.</p>
+        <p class="red ortala">Lorem ipsum dolor sit amet.</p>
+        <p class="red">Reprehenderit aliquam esse ab quae!</p>
+        <p>Sequi rem vel aliquid soluta.</p>
+
+    </div>
+
+    <ul>
+        <li class="first red ortala">Lorem ipsum dolor sit amet.</li>
+        <li>Consectetur, laborum. Quia, eius doloribus.</li>
+        <li>Deleniti quaerat laborum at perspiciatis!</li>
+        <li>Doloremque ullam veniam illo facilis.</li>
+        <li class="red">Molestias beatae magnam expedita sit.</li>
+    </ul>
+
+
+    <ul>
+        <li class="first">Lorem ipsum dolor sit amet.</li>
+        <li>Consectetur, laborum. Quia, eius doloribus.</li>
+        <li>Deleniti quaerat laborum at perspiciatis!</li>
+        <li>Doloremque ullam veniam illo facilis.</li>
+        <li>Molestias beatae magnam expedita sit.</li>
+    </ul>
+
+
+    <a href="#" id="link" class="ortala">Link</a><!-- Inline olduğu için ortalanmaz -->
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+.box1{
+    background-color: blue;
+    width: 200px;
+    height:50px ;
+}
+
+.box2{
+    background-color: pink;
+    width: 60%;
+    height: 100px;
+}
+
+.box3{ /* % nin özelliği parent a bakar ona göre hareket eder */
+    background-color: yellow;
+    width: 70%;
+    height: 50%;
+} /* biri bodynin diğeride ekranın boyutuna alıyo, % parent a bakar, vw(view yani ekrana göre) alıyor*/
+
+.box4{
+    background-color: aqua;
+    width: 60vw; /*  1vw = 1% of viewport : ekranın yüzde 1 ine eşit */
+    height: 20vh;
+}
+
+.box5{
+    background-color: bisque;
+    width: 80vw;
+    height: 15vh;
+}
+
+#div1{
+    font-size: 30px;
+}
+
+#div2{
+    font-size: 1.5em; /* değişiklik olmadı em diyince parenta bakar ona göre 30 un 1.5 katı kadar yapar büyüklüğü*/
+}
+
+html{
+    font-size: 15px;
+}
+
+#div3{
+
+    font-size: 32px;
+}
+
+#div4{
+    font-size: 2rem; /* 30px e karşılık gelir çünkü html e bakar ona göre ayarlar.*/
+}
+
+
+/* body'nin yüksekliği olmadığı için % olarak height değeri çalışmaz. Fakat ekranın bir yüksekliği olduğu için height özelliğinde vh değeri çalışır. */
+
+/* em parent elemente göre,  rem ise root elemente göre (html) kendisini ayarlar. */

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+
+        /* Relative: Kendi doğal konumuna göre kaydırma yapılır, sayfa akışını bozmaz.
+            Absolute: En yakın konumlandırılmış üst elemana göre konumlanır, sayfa akışını bozar.
+            Fixed: Sayfanın görüntüleme alanına göre konumlanır, her zaman sabit kalır.
+            Sticky: Sayfada normal akıştadır, kaydırma sırasında belirli bir noktaya geldiğinde sabitlenir. */
+        
+        .box1, .box2 {
+            width: 50px;
+            height: 50px;
+        }
+
+        .box1 {
+            background-color: green;
+            position: relative;
+            top: 100px;
+            left: 60px;
+            z-index: 0; 
+        }
+        /* z-index Özelliği Nasıl Çalışır?
+            z-index değeri, öğenin "Z eksenindeki" pozisyonunu belirler. Bu, ekranın X ve Y eksenine ek olarak 3. bir eksen anlamına gelir, yani ekrandaki öğenin kullanıcıya daha yakın veya daha uzak görünmesini sağlar.
+            z-index değeri pozitif veya negatif bir tamsayı olabilir. Değer ne kadar yüksekse, öğe o kadar önde görüntülenir. */
+
+        .box2 {
+            background-color: blue;
+            position: relative;
+            top: 10px;
+            left: 60px;
+            z-index: 0; /* steaking order :yığılma sırası, z-index değeri, öğenin Z eksenindeki pozisyonunu belirler */
+        }
+
+        /* relative bulunduğu konuma göre top ve left gibi değerler alır. Diğer elemetler relative olan elementin orijinal konumuna göre hareket eder.*/
+
+        .box3 {
+            background-color: rgb(103, 158, 140);
+            padding: 20px;
+            margin: 20px;
+            position: relative;
+            top: 100px;
+            width: 250px;
+            height: 200px;
+        }
+
+        .box3 img {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        /* absolute başka elementlere bakmadan hareket eder ve kendisini ilk etapta html'e göre konumlandırır. Fakat parent elementine static dışında bir position değeri verdiğimiz zaman bu parent'a göre konumlanır. */
+    </style>
+</head>
+<body>
+    <h2 style="background-color: coral; margin: 0">Position</h2>
+
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+
+    <div class="box3">
+        <img src="../img/zebra-7853009_640.jpg" alt="" width="50">
+    </div>
+</body>
+</html>
+
+<!--  Varsayılan değer static olduğundan, position: static; olarak belirtmeye gerek yoktur; öğenin position özelliğini belirtmediğiniz sürece öğe zaten static olarak kabul edilir.
+
+Özetle:
+
+Eğer bir öğe zaten position özelliği belirtilmemiş haldeyse, varsayılan olarak position: static; kabul edilir.
+position: static; yazmak gereksizdir, çünkü tüm öğeler zaten bu varsayılan pozisyonlama türünü kullanır.
+Yalnızca öğeyi relative, absolute, fixed, veya sticky gibi farklı bir pozisyonda ayarlamak istiyorsanız, position özelliğini belirtmeniz gerekir. -->

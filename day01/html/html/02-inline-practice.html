@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <h1 style="color: white; background-color:orange ; text-align: center;">Lorem Ipsum Nedir?</h1>
+
+    <p style="text-align: left; font-size: 1rem;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem necessitatibus, maxime rem quod 
+        consequatur ratione eaque magnam pariatur placeat delectus vel voluptates ipsa qui, sequi fuga ad 
+        saepe molestiae modi?</p>
+
+    <p style="text-align: center; font-size: 1.5rem;">Amet nihil quisquam voluptatibus sequi nulla magni, rerum, nam laboriosam repellat dolorum 
+        laborum! Expedita nemo dolorum provident, tenetur quod iste. <span style="color: red;">Sapiente ea ut placeat?</span>  Vel
+         dolorum alias consequatur nisi ex!</p>
+
+    <p style="text-align: end; font-size: 20px;">Dolores ducimus, porro cum neque, consequatur voluptas nisi enim assumenda tempora minus 
+        cumque rem adipisci? Neque harum delectus explicabo voluptas officiis voluptatum hic, vitae 
+        quod quas quasi labore, quae quibusdam.</p>
+</body>
+</html>
+
+<!-- <span> Nerelerde Kullanılır?
+        Bir cümledeki tek kelimeye vurgu yapmak için.
+        Belirli metin parçalarını farklı renklendirmek veya boyutlandırmak için.
+        Dinamik stiller veya JavaScript ile etkileşim kurmak için. -->
+
+        <!-- Ölçü Birimleri: -->
+         <!-- px: Sabit, bağımsız ve kesin bir değerdir.
+        %: Parent öğeye göre göreceli değer alır, esnek bir tasarım sağlar.
+        rem: Kök (root) boyutuna göre ayarlanır, tüm sayfada bir bütünlük sağlamak için kullanılır. -->
+
+
+        <!-- /* Eğer HTML'de font-size varsayılan olarak 16px ise: */
+p {
+    font-size: 1rem; /* 16px'e denk gelir */
+    width: 50%;      /* parent ögenin %50'si kadar genişlik kaplar */
+    margin: 10px;    /* her cihazda 10 piksel boşluk oluşturur */
+} -->
+
+
+<!-- PX(PİXEL):
+Tanım: px, ekran çözünürlüğüne bağlı olarak tanımlanan bir sabit uzunluk birimidir ve piksel anlamına gelir. Her px, ekranın gerçek piksel birimine karşılık gelir. Dolayısıyla, her cihazda sabit bir boyutu temsil eder.
+Kullanımı: Kesin bir ölçü istenildiğinde kullanılır. Örneğin, butonların sabit yükseklik ve genişliğe sahip olması istenildiğinde uygundur.
+Avantajları:
+Cihazdan bağımsız olarak sabit: Her ekranda aynı boyutu verir.
+Kontrollü görünüm: Özellikle piksel hassasiyeti gerektiren yerlerde tercih edilir.
+Dezavantajları:
+Duyarlılığı azaltır: Cihaz ekranı büyüklüğüne göre esnek bir yapı sunmaz, bu da responsif tasarımı zorlaştırabilir.
+Erişilebilirlik: Eğer kullanıcı tarayıcının yazı boyutunu değiştirmişse, px ile tanımlanan metinler bu değişiklikten etkilenmez.  -->
+
+
+<!-- % YÜZDE:
+ Tanım: %, ebeveyn öğeye (parent) göre orantılı olarak belirlenen bir ölçü birimidir. Bir öğenin genişliğini veya yüksekliğini, üst öğenin (parent element) genişliğinin veya yüksekliğinin belirli bir yüzdesi olarak ifade eder.
+Kullanımı: Özellikle esnek ve responsif tasarımlarda kullanılır. Örneğin, bir kutunun genişliğinin ekranın %50'si olması isteniyorsa, % kullanmak idealdir.
+Avantajları:
+Esneklik sağlar: Bir öğenin boyutu, üst öğeye göre orantılandığı için, ekrana ve ortama göre kolayca uyum sağlar.
+Responsif tasarım: Mobil uyumluluk için oldukça kullanışlıdır.
+Dezavantajları:
+Bağlılık: Bir öğenin boyutu, üst öğenin boyutuna bağlı olduğundan, karmaşık yapıların olduğu projelerde her zaman beklenen sonuçlar elde edilemeyebilir.
+Daha zor kontrol: Tam bir piksel kontrolü sağlanamaz, tasarımda kaymalar meydana gelebilir. -->
+
+<!-- rem(Root Em):
+ Tanım: rem, kök öğeye (root) göre orantılı bir ölçü birimidir. rem birimi, HTML kök (<html>) öğesinin (root) font boyutuna göre hesaplanır. Varsayılan olarak bu değer çoğu tarayıcıda 16px olarak tanımlıdır, yani 1rem = 16px olur. Ancak, kök öğenin font büyüklüğünü CSS ile değiştirmek mümkündür.
+Kullanımı: rem, özellikle font boyutlarında ve padding, margin gibi iç ve dış boşluklarda kullanılır. Sabit bir referans noktası sağladığı için erişilebilirlik açısından önemlidir.
+Avantajları:
+Erişilebilirlik: Tarayıcıdaki yazı boyutu değiştirildiğinde veya kullanıcı tercihine göre boyutlandırıldığında, rem birimi bu değişiklikten etkilenir ve otomatik olarak yeniden boyutlanır.
+Tutarlılık sağlar: Tüm sayfada aynı kök öğeye göre (örneğin, 16px) ölçeklenir, bu da daha tutarlı bir görünüm sağlar.
+Dezavantajları:
+Daha karmaşık hesaplamalar gerekebilir: Eğer kök öğenin boyutu (örneğin, font-size) değiştirilirse, rem ile yapılan tüm hesaplamalar buna göre etkilenir. -->
+
+<!-- Hangi Birimi Ne Zaman Kullanmalı?
+Kesin ölçüler ve kontrollü bir görünüm istediğinizde px idealdir. Örneğin, logolar ve belirli grafik öğeleri için kullanışlıdır.
+Responsive (duyarlı) tasarım için, özellikle genişlik oranları için % daha uygundur.
+Daha büyük ve erişilebilir bir ölçülendirme yapısı gerektiğinde, rem kullanımı önerilir. rem, tüm projede tutarlı ve ölçeklenebilir bir tasarım sağlar. -->

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+ /* html kullanmadan css içine direkt import ile de font yapabiliriz, tavsiye edilen */
+
+h2{
+    font-family: "Londrina Sketch", sans-serif;
+    
+}
+
+
+
+p.text{
+    /* font-family: monospace;/* yazı stili */
+    font-weight: 600;/* yazı kalınlığı */
+    font-family: Roboto;
+    
+}
+
+
+
+ul{
+    font-family: "Caveat", cursive;
+}
+
+/* control F5 e basınca önbelleği temizlemeliyiz  hangi durumlarda : cache de önceden önbelleğe alınmış bir fonts varsa */
+
+
+@font-face{
+    font-family: footer-font;
+    src: url("../fonts/DancingScript-Bold.ttf")  /* indirerek kullandığımızda */
+}
+
+footer{
+    font-family: "footer-font";
+}
+
+/* text-shadow:2px 2px 4px gray; yazıya gölge efekti verir */

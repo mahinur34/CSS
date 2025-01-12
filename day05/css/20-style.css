@@ -1,0 +1,35 @@
+h2{
+    text-align: center;
+}
+
+
+nav#menu ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav#menu ul li {
+    display: inline-block;
+    margin-left: 1.5rem;
+    background-color: lightgrey;
+    
+}
+
+nav#menu ul li a{
+    display: inline-block;
+    color:black;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav#menu ul li a:hover{
+    background-color: green;
+    color: white;
+    
+}
+
+nav#menu ul li.active a{
+
+    background-color: cadetblue;
+    color: white;
+}

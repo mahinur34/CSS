@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Styles</title>
+    <link rel="stylesheet" href="">
+
+    <style>
+        a{
+            color: red;
+        }
+
+        a:visited{ /* site ziyaret edildiğinde mavi olsun */
+            color: blue;
+        }
+
+        a:hover{
+            color: green;
+            text-decoration: none;
+            background-color: bisque;
+            font-size: larger;
+        }
+
+        h2:hover{
+            color: blue;
+            font-size: 34px;
+        }
+
+        div{
+            background-color: brown;
+            width: 400px;
+            height: 100px;
+        }
+
+        div:hover{/* hover : üzerine gelindiğinde işlem yapma özelliği, interaktif öğeler(butonlar, linkler vb.) üzerinde kullanıcı etkileşimini daha belirgin kılmak için kull. */
+            background-color: darkgreen;
+            width: 400px;
+            height: 200px;
+        }
+
+        a:active{ /* tıklandığında still değiştirmek için kullanılır */
+            color: yellow;
+        } /* tıklandığında sarı oluyor */
+
+        button{
+            cursor:pointer; /* tıklanabilme özelliği */
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>Link Styles</h2>
+
+    <ul>
+        <li><a href="https://pixabay.com">Pixabay</a></li>
+        <li><a href="https://www.w3schools.com">W3Schools</a></li>
+        <li><a href="https://techproeducation.com.tr">TechPro</a></li>
+        <li><a href="https://react.dev/">React</a></li>
+        <li><a href="../../day02/html/08-navbar.html">Navbar</a></li>
+        <li><a href="https://iconfinder">Icon</a></li>
+    </ul> 
+
+    <div></div><br>
+
+    <button>Save</button>
+</body>
+</html>
+
+  <!-- PSEUDO CLASSLAR ve Özellikleri: -->
+   <!-- YAPISAL PSEUDO CLASSLAR -->
+
+  <!--:first-child: Seçilen öğenin, kendi ebeveyninin ilk çocuğu olduğu durumda stil uygular.  -->
+  <!-- :last-child: Seçilen öğenin, ebeveyninin son çocuğu olduğu durumda stil uygular. -->
+  <!-- :nth-child(n): Ebeveynin n numaralı çocuğu olan öğelere stil uygular. n burada sayısal bir değer ya da formüldir. -->
+  <!-- :nth-last-child(n): Ebeveynin sondan n numaralı çocuğu olan öğelere stil uygular. -->
+  <!-- :nth-of-type(n): Aynı türdeki öğeler içinde n numaralı olanlara stil uygular. -->
+  <!-- :first-of-type ve :last-of-type: Ebeveynin belirli türdeki ilk veya son öğelerine stil uygular. -->
+   <!--:only-child: Öğenin ebeveyninin tek çocuğu olduğu durumda stil uygular.  -->
+   <!--:only-of-type: Belirli türdeki öğenin, ebeveyninde yalnızca bir tane olduğu durumda stil uygular.  -->
+
+   <!-- KULLANICI ETKİLEŞİMİ PSEUDO CLASSLARI: -->
+
+   <!-- :hover: Öğenin üzerine fare geldiğinde aktif olur -->
+   <!-- :active: Öğeye tıklanırken aktif olur. -->
+   <!--:focus: Öğeye odaklanıldığında (örneğin bir input alanına tıklanıldığında) etkin olur.  -->
+   <!-- :focus-visible: Tarayıcı tarafından belirlenen klavye odaklanma durumunda etkinleşir (genellikle klavye ile gezinirken). -->
+   <!-- :visited: Ziyaret edilmiş bağlantılara stil eklemek için kullanılır. -->
+   <!-- :link: Ziyaret edilmemiş bağlantılara stil eklemek için kullanılır. -->
+
+   <!-- DURUM VE YAPISAL SEÇİCİ PSEUDO CLASSLAR -->
+
+   <!-- :not(selector): Belirtilen seçiciyi kapsamayan öğelere stil uygular. -->
+   <!-- :empty: İçinde başka öğe veya metin bulunmayan öğelere stil uygular. -->
+   <!-- :checked: Bir input veya checkbox gibi form öğeleri seçildiğinde (işaretlendiğinde) aktif olur. -->
+   <!-- :enabled ve :disabled: Form öğelerinin etkin veya devre dışı olduğunu belirtir. -->
+   <!-- :required ve :optional: Bir form öğesinin gereklilik durumuna göre stil uygular. -->
+   <!-- :valid ve :invalid: Form öğesinin doğrulama durumuna göre stil uygular. -->
+
+   <!-- DİĞER PSEUDO CLASSLAR -->
+
+   <!-- :root: HTML belgesinin kök öğesine (en üst seviye, genellikle <html> öğesi) stil uygular, genellikle CSS değişkenlerini tanımlamak için kullanılır. -->
+   <!-- :target: URL’deki bir #id hedef alındığında (örneğin, index.html#section1) aktif olur. -->
+   <!-- :lang(language): Belirli bir dil için stil uygular. -->
+   <!-- :placeholder-shown: input veya textarea gibi öğelerde, placeholder metni gösterildiğinde aktif olur. -->
+   <!-- :dir(): Metnin yönüne göre (LTR veya RTL) stil uygular. -->
+
+
+

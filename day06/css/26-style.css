@@ -1,0 +1,64 @@
+*{ /* tüm elementler */
+
+}
+
+h2{
+    /* tüm h2'ler */
+}
+
+.section-header{
+    /* sayfadaki tüm section-header isimli elementler */
+}
+
+.section-header h2{
+    /* sayfadaki tüm section-header isimli elementlerin içindeki h2'ler */
+}
+
+body section:nth-of-type(3){
+    /* body içindeki 3.section */
+}
+
+section.top-bar img{
+    /* top-bar isimli section içindeki img */
+}
+
+.top-bar nav a{
+    /* top-bar içindeki nav içindeki linkler */
+}
+
+.sosyal-medya a{
+    /* parenti sosyal medya olan linkler */
+}
+
+section nav li{
+    /* parent i section olan navların içindeki li'ler */
+}
+
+.top-bar+section{
+    /* top-bar dan sonraki section */
+}
+
+.kutu img+span{
+    /* parenti kutu olan img'lerden sonraki spanlar */
+}
+
+.top-bar nav li:first-child +li{
+    /* top-bar içindeki nav içindeki li'den sonraki li'ler */
+}
+
+.referanslar .kutu:hover img{
+    /* referanslar içindeki kutuların üzerine gelindiğinde img'ler */
+}
+
+.hizmetler .kutu h3::before{
+    /* hizmetler için kutu parent ı olan h3'lerden önce içerik ekklenecek */
+}
+
+.top-bar li:nth-child(3):hover::after{
+    /* top-bar içindeki 3. li'nin üzerine gelindiğinde 4.sıraya içerik eklenecek */
+}
+
+.top-bar li:hover + li a::after{
+    /* top-bar içindeki li'nin üzerine gelindiğinde bu li'den sonraki li'içindeki a'nın sonuna içerik eklenecek */
+}
+

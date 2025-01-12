@@ -1,0 +1,50 @@
+p::first-letter { /* baş harf özelliği */
+    color: red;
+    font-size: 30px;
+}
+
+p::first-line{
+color: brown;
+font-weight: bold;
+}
+
+p::selection{/* seçerken gelen rengi seçiyoruz */
+ background-color: lightgreen;
+}
+
+ol{
+    list-style-type: "=" ;
+}
+
+ol li::marker{ /* liste elemanlarının basındaki madde imi */
+ color: green;
+ font-size: 20px;
+
+}
+
+h2{
+    text-align: center;
+}
+
+h2::before {
+    content: "►";
+    color: red;
+    margin-right: 10px;
+}
+
+h2::after {/* öncesine veya sonrasına içerik ekleyip still verebiliyoruz */
+    content: "◄";
+    color: red;
+    margin-left: 10px;
+}
+
+p span::before {
+    content: "[";
+    color: red;
+}
+
+p span::after {
+    content: "]";
+    color: red;
+}
+

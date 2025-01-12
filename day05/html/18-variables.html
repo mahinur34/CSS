@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+
+    <style> /* variable kullanım şekli */
+        :root{
+            --my-color:coral;
+            --my-bg--color:lightcyan;
+            --my-color-2: green;
+
+            --my-font:monospace;
+        }
+
+    h2{
+        color:var(--my-color);
+        background-color: var(--my-bg--color);
+        text-align: center;
+        font-size: 32px;
+    }
+
+    span{
+        background-color: var(--my-bg--color);
+        font-family: var(--my-font);
+    }
+
+    button{
+        padding: 7px 20px;
+        color: green;
+        background-color: var(--my-bg--color);
+    }
+    </style>
+</head>
+<body>
+    <h2>Variables</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, sunt?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, sunt?
+        Lorem ipsum dolor sit amet, <span>consectetur adipisicing elit</span>
+        consectetur adipisicing elit. Facere, sunt?
+    </p>
+
+    <button>Save</button>
+</body>
+</html>

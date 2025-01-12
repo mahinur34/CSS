@@ -1,0 +1,35 @@
+:root{
+    --color:rgb(153, 203, 203);
+}
+
+
+
+div.button-group{
+    background-color: rgb(48, 48, 68);
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+div.button-group button{
+    background-color: transparent;
+    padding: 5px 15px;
+    color: var(--color) ;
+    border:3px solid var(--color);
+    border-radius: 5px;
+}
+
+.button-group button:first-child{
+    border-radius: 10px 5px 5px 10px;
+}
+
+.button-group button:last-child{
+    border-radius: 5px 10px 10px 5px;
+}
+
+.button-group button:hover{
+    background-color: black;
+    color: whitesmoke;
+    border:3px solid whitesmoke;
+
+}

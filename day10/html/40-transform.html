@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .my-div {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            transform: translate(50%, 30%); /* 50px ve 30px karşılık gelir. Çünkü width ve height 100px'dir. */
+            /* positiondan farkı nedir?  */
+        }
+
+        img:hover {
+            transform: translate(50px, 100px) rotate(180deg) scale(1.5, 1.5); /* scale :elementin genişliğini belirtmek için kullanılır  */
+        }
+    </style>
+</head>
+<body>
+    <h2>Transform</h2>
+
+    <div class="my-div"></div>
+
+    <img src="../img/sunset-8331285_1280.jpg" alt="sunset" width="200px">
+</body>
+</html>

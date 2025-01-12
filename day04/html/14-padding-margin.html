@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding-Margin</title>
+
+    <style>
+
+        .box1{
+
+        background-color: peru;
+        width: 300px;
+        height: 100px;
+        padding: 20px;
+        }
+
+        .box2{
+            background-color: palegreen;
+            width: 50px;
+            height: 50px;
+        
+        }
+
+        .box3{
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+
+        .box4{
+            background-color: brown;
+            padding: 20px; /* içeriye doğru boşluk */
+            padding-top: 15px; /* üstten boşluk */
+            padding-bottom: 15px;/* alttan boşluk */
+            margin-left: 50px;/* soldan dışarıya doğru boşluk */
+            margin-right: 50px;/* sağdan 50px boşluk ver demek */
+            padding: 10px 20px 30px 40px;/* üst sağ alt sol , burada tek seferde yazmış olduk, saat yönünde */
+        }
+
+        span{
+            background-color: peru;
+            margin-top: 20px; /* üstten 20px boşluk ver demek */
+            padding: 7px 20px;  
+        }
+
+        button{
+            margin-top: 25px;
+            padding: 7px 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>Padding-Margin</h2>
+
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
+    <div class="box3"></div>
+    <div class="box4">Lorem Ipsum</div>
+
+    <!-- inline elements -->
+
+    <span>Span</span>
+    <button>Save</button>
+</body>
+</html>
+
+<!-- padding : iç boşluk
+     margin : dış boşluk -->
