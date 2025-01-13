@@ -6,10 +6,10 @@
     <title>Position</title>
     <style>
 
-        /* Relative: Kendi doğal konumuna göre kaydırma yapılır, sayfa akışını bozmaz.
-            Absolute: En yakın konumlandırılmış üst elemana göre konumlanır, sayfa akışını bozar.
-            Fixed: Sayfanın görüntüleme alanına göre konumlanır, her zaman sabit kalır.
-            Sticky: Sayfada normal akıştadır, kaydırma sırasında belirli bir noktaya geldiğinde sabitlenir. */
+        /* Relative: Kendi doğal konumuna göre kaydırma yapılır, sayfa akışını bozmaz. relative:bağlı
+            Absolute: En yakın konumlandırılmış üst elemana göre konumlanır, sayfa akışını bozar. absolute: tam bağımsız
+            Fixed: Sayfanın görüntüleme alanına göre konumlanır, her zaman sabit kalır. fixed:sabit
+            Sticky: Sayfada normal akıştadır, kaydırma sırasında belirli bir noktaya geldiğinde sabitlenir.  sticky: yapışkan*/
         
         .box1, .box2 {
             width: 50px;
@@ -24,7 +24,8 @@
             z-index: 0; 
         }
         /* z-index Özelliği Nasıl Çalışır?
-            z-index değeri, öğenin "Z eksenindeki" pozisyonunu belirler. Bu, ekranın X ve Y eksenine ek olarak 3. bir eksen anlamına gelir, yani ekrandaki öğenin kullanıcıya daha yakın veya daha uzak görünmesini sağlar.
+            z-index değeri, öğenin "Z eksenindeki" pozisyonunu belirler. Bu, ekranın X ve Y eksenine ek olarak 3. bir eksen anlamına gelir, 
+            yani ekrandaki öğenin kullanıcıya daha yakın veya daha uzak görünmesini sağlar.
             z-index değeri pozitif veya negatif bir tamsayı olabilir. Değer ne kadar yüksekse, öğe o kadar önde görüntülenir. */
 
         .box2 {
@@ -53,7 +54,8 @@
             right: 10px;
         }
 
-        /* absolute başka elementlere bakmadan hareket eder ve kendisini ilk etapta html'e göre konumlandırır. Fakat parent elementine static dışında bir position değeri verdiğimiz zaman bu parent'a göre konumlanır. */
+        /* absolute başka elementlere bakmadan hareket eder ve kendisini ilk etapta html'e göre konumlandırır. 
+        Fakat parent elementine static dışında bir position değeri verdiğimiz zaman bu parent'a göre konumlanır. */
     </style>
 </head>
 <body>
@@ -68,10 +70,12 @@
 </body>
 </html>
 
-<!--  Varsayılan değer static olduğundan, position: static; olarak belirtmeye gerek yoktur; öğenin position özelliğini belirtmediğiniz sürece öğe zaten static olarak kabul edilir.
+<!--  Varsayılan değer static olduğundan, position: static; olarak belirtmeye gerek yoktur; 
+  öğenin position özelliğini belirtmediğiniz sürece öğe zaten static olarak kabul edilir.
 
 Özetle:
 
 Eğer bir öğe zaten position özelliği belirtilmemiş haldeyse, varsayılan olarak position: static; kabul edilir.
 position: static; yazmak gereksizdir, çünkü tüm öğeler zaten bu varsayılan pozisyonlama türünü kullanır.
-Yalnızca öğeyi relative, absolute, fixed, veya sticky gibi farklı bir pozisyonda ayarlamak istiyorsanız, position özelliğini belirtmeniz gerekir. -->
+Yalnızca öğeyi relative, absolute, fixed, veya sticky gibi farklı bir pozisyonda ayarlamak istiyorsanız, 
+position özelliğini belirtmeniz gerekir. -->
